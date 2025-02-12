@@ -26,7 +26,7 @@
                     <div class="dropdown">
                         <a href="OurStory.html">Our Story</a>
                         <a href="gallery.html">Gallery</a>
-                        <a href="#">Customer Reviews</a>
+                        <a href="CustomerReviews.html">Customer Reviews</a>
                     </div>
                 </div>
                 <div class="nav-item relative">
@@ -39,7 +39,7 @@
                     <div class="dropdown">
                         <a href="#">Secrets Palace</a>
                         <a href="#">FoLiXx Bukka</a>
-                        <a href="#">The Glass House</a>
+                        <a href="https://theglasshouse.ng/">The Glass House</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-link">Contact Us</a>
@@ -68,7 +68,7 @@
                     <div id="mobile-about" class="hidden pl-6 space-y-2">
                         <a href="OurStory.html" class="block py-2 hover:bg-gray-800">Our Story</a>
                         <a href="gallery.html" class="block py-2 hover:bg-gray-800">Gallery</a>
-                        <a href="#" class="block py-2 hover:bg-gray-800">Customer Reviews</a>
+                        <a href="CustomerReviews.html" class="block py-2 hover:bg-gray-800">Customer Reviews</a>
                     </div>
                 </div>
 
@@ -118,214 +118,168 @@
                 </p>
             </div>
         </div>
-  <!-- Jobs Container -->
-  <div id="SH_Embed" class="mb-16"></div>
 
-<script src='https://folixxhospitality.seamlesshiring.com/js/embed.js'></script>
-<script type='text/javascript'> 
-    document.getElementById('SH_Embed').innerHTML = SH_Embed.pull({
-        key: 'eyJpdiI6IjNQdDJNVVBWeWdkSkdETnZYZjF3clE9PSIsInZhbHVlIjoiR2hRS2h2Y0xZS0hrbHkwRnJzKzRucW5qa3NQVUJLRDYvRzNLa2VqcllGdDc0T1hqWUNOWWx5SUxoOWlGNzYxK3hUMGQwVUh4OGQxYUVFa3BIbzlVNGc9PSIsIm1hYyI6IjllZWQ3N2ZjOWQ2Yjc0ODNjYzlhZWIxZDZjZjA0MTk4NjQ2OGRlYmM0YzUwNWQyZmJhNTAyY2VhZTE0NTkzMzIiLCJ0YWciOiIifQ==',
-        base_url: 'https://folixxhospitality.seamlesshiring.com/'
-    }); 
-    //document.getElementById('SH_Embed') This finds the HTML element with the ID "SH_Embed" where the job listings will be displayed
-    //.innerHTML This property sets or changes the HTML content inside the selected element
-    // key: This is your unique API key that authenticates your requests to SeamlessHiring
-    // base_url: This is the base URL for your SeamlessHiring account
+    <!-- Job Listings Container -->
+    <div id='SH_Embed'></div>
+
+    <!-- API Integration -->
+    <script src='https://folixxhospitality.seamlesshiring.com/js/embed.js'></script>
+    <script type='text/javascript'>
+        loadContent()
+        function loadContent(country, specialization) {
+            document.getElementById('SH_Embed')
+                .innerHTML = SH_Embed.pull({
+                    key: 'eyJpdiI6IjNQdDJNVVBWeWdkSkdETnZYZjF3clE9PSIsInZhbHVlIjoiR2hRS2h2Y0xZS0hrbHkwRnJzKzRucW5qa3NQVUJLRDYvRzNLa2VqcllGdDc0T1hqWUNOWWx5SUxoOWlGNzYxK3hUMGQwVUh4OGQxYUVFa3BIbzlVNGc9PSIsIm1hYyI6IjllZWQ3N2ZjOWQ2Yjc0ODNjYzlhZWIxZDZjZjA0MTk4NjQ2OGRlYmM0YzUwNWQyZmJhNTAyY2VhZTE0NTkzMzIiLCJ0YWciOiIifQ==',
+                    base_url: 'https://folixxhospitality.seamlesshiring.com/',
+                    country: country ?? 'all',
+                    specialization: specialization ?? 'all'
+                });
+        }
+    </script>
 
 
-
-const customStyles = `
-
-    .row {
-        display: flex !important;
-        width: 100% important;
-        justify-content: space-between !important;
-    }
-    
-    #country {
-        width: 50% !important
-    }
-    #specialization {
-        width: 50% !important;
-        padding: 20px 20px; !imporatnt
-    }
-    #SH_Embed {
+    <style>
+        /* Base styles */
+        #SH_Embed {
         background: transparent !important;
         font-family: inherit !important;
         max-width: 1280px !important;
         margin: 0 auto !important;
-    }
+        }
 
-    /* Filter Section Styling */
-    #SH_Embed .filter-container {
-        background: rgba(31, 41, 55, 0.5) !important;
-        padding: 2rem !important;
-        width: 40% !importance;
-        border-radius: 1rem !important;
-        backdrop-filter: blur(10px) !important;
-        border: 1px solid rgba(75, 85, 99, 0.3) !important;
-        display: flex !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        gap: 2rem !important;
-    }
+        /* Filter row styles */
+        .row {
+            display: flex !important;
+            width: 100% !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            gap: 1rem !important;
+            margin-bottom: 3rem !important;
+        }
 
-    /* Individual Filter Container */
-    #SH_Embed .filter-container > div {
-        flex: 1 !important;
-    }
+        #country {
+            flex: 1 !important;
+            min-width: 0 !important;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #333;
+            background-color: #141414;
+            color: white;
+        }
 
-    /* Select and Input Fields */
-    #SH_Embed select,
-    #SH_Embed input {
-        width: 100% !important;
-        background: rgba(0, 0, 0, 0.5) !important;
-        border: 1px solid rgba(75, 85, 99, 0.5) !important;
-        color: #ffffff !important;
-        padding: 0.75rem 1rem !important;
-        border-radius: 0.5rem !important;
-        transition: all 0.2s ease-in-out !important;
-        font-size: 0.95rem !important;
-        display: inline-block;
-    }
+        #specialization {
+            flex: 1 !important;
+            min-width: 0 !important;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #333;
+            background-color: #141414;
+            color: white;
+        }
+/* 
+        .search-button {
+            margin: 0 !important;
+            padding: 8px 16px;
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        } */
 
-    #SH_Embed select:hover,
-    #SH_Embed input:hover {
-        border-color: #dc2626 !important;
-    }
+        .search-button:hover {
+            background-color: #cc0000;
+        }
 
-    #SH_Embed select:focus,
-    #SH_Embed input:focus {
-        outline: none !important;
-        border-color: #dc2626 !important;
-        box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.2) !important;
-    }
-
-    /* Job Listing Cards */
-    #SH_Embed .job-listing {
-        background: rgba(31, 41, 55, 0.7) !important;
-        border: 1px solid rgba(75, 85, 99, 0.3) !important;
-        border-radius: 1rem !important;
-        margin-bottom: 1.5rem !important;
-        padding: 2rem !important;
-        transition: all 0.3s ease-in-out !important;
-        backdrop-filter: blur(10px) !important;
-    }
-
-    #SH_Embed .job-listing:hover {
-        transform: translateY(-2px) !important;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
-        border-color: rgba(220, 38, 38, 0.3) !important;
-    }
-
-    /* Job Title */
-    #SH_Embed .job-title {
-        font-size: 1.25rem !important;
-        font-weight: 600 !important;
-        color: #ffffff !important;
-        margin-bottom: 1rem !important;
-        display: inline-block !important;
-        position: relative !important;
-        transition: all 0.2s ease-in-out !important;
-    }
-
-    #SH_Embed .job-title:hover {
-        color: #dc2626 !important;
-    }
-
-    #SH_Embed .job-title::after {
-        content: '' !important;
-        position: absolute !important;
-        bottom: -2px !important;
-        left: 0 !important;
-        width: 0 !important;
-        height: 2px !important;
-        background-color: #dc2626 !important;
-        transition: width 0.3s ease-in-out !important;
-    }
-
-    #SH_Embed .job-title:hover::after {
-        width: 100% !important;
-    }
-
-    /* Job Details */
-    #SH_Embed .job-details {
-        color: #9ca3af !important;
-        font-size: 0.95rem !important;
-        line-height: 1.6 !important;
-        margin-bottom: 1.5rem !important;
-    }
-
-    /* Apply Button */
-    #SH_Embed .apply-button {
-        background: #dc2626 !important;
-        color: white !important;
-        padding: 0.75rem 1.5rem !important;
-        border-radius: 9999px !important;
-        font-weight: 500 !important;
-        transition: all 0.2s ease-in-out !important;
-        border: none !important;
-        display: inline-flex !important;
-        align-items: center !important;
-        gap: 0.5rem !important;
-        font-size: 0.95rem !important;
-        text-decoration: none !important;
-    }
-
-    #SH_Embed .apply-button:hover {
-        background: #b91c1c !important;
-        transform: translateY(-1px) !important;
-        box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2) !important;
-    }
-
-    #SH_Embed .apply-button:active {
-        transform: translateY(0) !important;
-    }
-
-    /* Search Button */
-    #SH_Embed .search-button,
-    #SH_Embed button[type="submit"] {
-        background: #dc2626 !important;
-        color: white !important;
-        padding: 0.75rem 2rem !important;
-        border-radius: 9999px !important;
-        font-weight: 500 !important;
-        transition: all 0.2s ease-in-out !important;
-        border: none !important;
-        cursor: pointer !important;
-        width: fit-content !important;
-        margin: 1rem auto 0 !important;
-        display: block !important;
-    }
-
-    #SH_Embed .search-button:hover,
-    #SH_Embed button[type="submit"]:hover {
-        background: #b91c1c !important;
-        transform: translateY(-1px) !important;
-        box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2) !important;
-    }
-
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
         #SH_Embed .filter-container {
-            flex-direction: column !important;
-            padding: 1.5rem !important;
+            width: 100% !important;
+            display: block !important;
+        }
+        
+        #SH_Embed select:hover,
+        #SH_Embed input:hover {
+            border-color: #dc2626 !important;
+        }
+        /* Job listing grid styles */
+       
+
+        .card.job-card.mb-3 {
+            background-color: #141414;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
         }
 
-        #SH_Embed .job-listing {
-            padding: 1.5rem !important;
+        .card.job-card.mb-3:hover {
+            transform: translateY(-5px);
         }
-    }
-`;
 
-    const styleSheet = document.createElement("style");
-    styleSheet.innerText = customStyles;
-    document.head.appendChild(styleSheet);
-</script>
+        .card-body {
+            padding: 1.2rem;
+            font-size: 20px;
+        }
 
+        .job-card-heading.d-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+        }
 
+        .job-title.font-weight-bold.text-dark.h5 {
+            color: white !important;
+            font-size: 24px;
+            margin: 0 0 15px 0;
+            text-decoration: none;
+            font-weight: 600;
+        }
 
-    </main>
+        #SH_Embed .job-title:hover {
+            color: #dc2626 !important;
+        }
+
+        .job-card-excerpt {
+            color: #ffffff;
+            line-height: 1.6;
+            margin: 0 0 10px 0;
+        }
+
+        .job-card-meta.pt-2 {
+            padding-top: 0.5rem;
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #333;
+            margin: 1rem 0;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column !important;
+            }
+            
+            #country,
+            #specialization {
+                width: 100% !important;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</main>
   <!-- ======= Footer ======= -->
   <footer id="footer" class="bg-black text-white text-sm">
     <div class="footer-top bg-black-900 border-t border-gray-700 border-b border-gray-800 py-10">
