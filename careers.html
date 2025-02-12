@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoLiXx Hospitality - Careers</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black bg-opacity-90 z-50 pt-2">
+        <div class="container mx-auto px-8 py-4 relative flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <span class="text-white"><a href="index.html">FOLIXX</span></a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <div class="nav-item relative">
+                    <a href="OurStory.html" class="nav-link">
+                        About Us 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="dropdown">
+                        <a href="OurStory.html">Our Story</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="#">Customer Reviews</a>
+                    </div>
+                </div>
+                <div class="nav-item relative">
+                    <a href="#" class="nav-link">
+                        Subsidiaries
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="dropdown">
+                        <a href="#">Secrets Palace</a>
+                        <a href="#">FoLiXx Bukka</a>
+                        <a href="#">The Glass House</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-colors">
+                    Reach Out
+                </button>
+                <button class="md:hidden text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+               
+     <!-- Mobile Menu -->
+     <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-95 text-white absolute top-16 left-0 w-full py-4">
+        <div class="flex flex-col space-y-4 px-6">
+                <div class="mobile-dropdown">
+                    <button class="flex justify-between w-full text-left py-2 hover:bg-gray-800 px-4" onclick="toggleDropdown('mobile-about')">
+                        About Us
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform" id="arrow-mobile-about" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="mobile-about" class="hidden pl-6 space-y-2">
+                        <a href="OurStory.html" class="block py-2 hover:bg-gray-800">Our Story</a>
+                        <a href="gallery.html" class="block py-2 hover:bg-gray-800">Gallery</a>
+                        <a href="#" class="block py-2 hover:bg-gray-800">Customer Reviews</a>
+                    </div>
+                </div>
+
+            <div class="mobile-dropdown">
+                <button class="flex justify-between w-full text-left py-2 hover:bg-gray-800 px-4" onclick="toggleDropdown('mobile-subsidiaries')">
+                    Subsidiaries
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform" id="arrow-mobile-subsidiaries" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="mobile-subsidiaries" class="hidden pl-6 space-y-2">
+                    <a href="#" class="block py-2 hover:bg-gray-800">Secrets Palace</a>
+                    <a href="#" class="block py-2 hover:bg-gray-800">FoLiXx Bukka</a>
+                    <a href="#" class="block py-2 hover:bg-gray-800">The Glass House</a>
+                </div>
+            </div>
+
+            <a href="contact.html" class="block py-2 hover:bg-gray-800 px-4">Contact Us</a>
+            <a href="careers.html" class="block py-2 hover:bg-gray-800 px-4">Careers</a>
+        </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 lg:px-8 mb-24">
+        <!-- Added pt-24 to account for fixed navbar height -->
+        <div class="pt-24">
+            <!-- Back Navigation -->
+            <div class="flex items-center mb-8 text-white">
+                <a href="/" class="flex items-center space-x-2 hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    <span class="text-lg">Back to Home</span>
+                </a>
+            </div>
+
+            <!-- Header Section -->
+            <div class="mb-16">
+                <span class="inline-flex items-center px-3 py-1 rounded-md text-sm font-medium bg-white text-black" style="width: fit-content;">
+                    Careers
+                </span>
+                <h1 class="mt-6 text-4xl lg:text-5xl font-bold tracking-tight text-white">
+                    Join Our Royal Team at <span class="text-red-600">FoliXx</span>
+                </h1>
+                <p class="mt-4 text-lg text-gray-400 max-w-3xl">
+                    Help us build the future of technology. We're always looking for talented individuals to join our growing team.
+                </p>
+            </div>
+        </div>
+  <!-- Jobs Container -->
+  <div id="SH_Embed" class="mb-16"></div>
+
+<script src='https://folixxhospitality.seamlesshiring.com/js/embed.js'></script>
+<script type='text/javascript'> 
+    document.getElementById('SH_Embed').innerHTML = SH_Embed.pull({
+        key: 'eyJpdiI6IjNQdDJNVVBWeWdkSkdETnZYZjF3clE9PSIsInZhbHVlIjoiR2hRS2h2Y0xZS0hrbHkwRnJzKzRucW5qa3NQVUJLRDYvRzNLa2VqcllGdDc0T1hqWUNOWWx5SUxoOWlGNzYxK3hUMGQwVUh4OGQxYUVFa3BIbzlVNGc9PSIsIm1hYyI6IjllZWQ3N2ZjOWQ2Yjc0ODNjYzlhZWIxZDZjZjA0MTk4NjQ2OGRlYmM0YzUwNWQyZmJhNTAyY2VhZTE0NTkzMzIiLCJ0YWciOiIifQ==',
+        base_url: 'https://folixxhospitality.seamlesshiring.com/'
+    }); 
+    //document.getElementById('SH_Embed') This finds the HTML element with the ID "SH_Embed" where the job listings will be displayed
+    //.innerHTML This property sets or changes the HTML content inside the selected element
+    // key: This is your unique API key that authenticates your requests to SeamlessHiring
+    // base_url: This is the base URL for your SeamlessHiring account
+
+
+
+const customStyles = `
+
+    .row {
+        display: flex !important;
+        width: 100% important;
+        justify-content: space-between !important;
+    }
+    
+    #country {
+        width: 50% !important
+    }
+    #specialization {
+        width: 50% !important;
+        padding: 20px 20px; !imporatnt
+    }
+    #SH_Embed {
+        background: transparent !important;
+        font-family: inherit !important;
+        max-width: 1280px !important;
+        margin: 0 auto !important;
+    }
+
+    /* Filter Section Styling */
+    #SH_Embed .filter-container {
+        background: rgba(31, 41, 55, 0.5) !important;
+        padding: 2rem !important;
+        width: 40% !importance;
+        border-radius: 1rem !important;
+        backdrop-filter: blur(10px) !important;
+        border: 1px solid rgba(75, 85, 99, 0.3) !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        gap: 2rem !important;
+    }
+
+    /* Individual Filter Container */
+    #SH_Embed .filter-container > div {
+        flex: 1 !important;
+    }
+
+    /* Select and Input Fields */
+    #SH_Embed select,
+    #SH_Embed input {
+        width: 100% !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+        border: 1px solid rgba(75, 85, 99, 0.5) !important;
+        color: #ffffff !important;
+        padding: 0.75rem 1rem !important;
+        border-radius: 0.5rem !important;
+        transition: all 0.2s ease-in-out !important;
+        font-size: 0.95rem !important;
+        display: inline-block;
+    }
+
+    #SH_Embed select:hover,
+    #SH_Embed input:hover {
+        border-color: #dc2626 !important;
+    }
+
+    #SH_Embed select:focus,
+    #SH_Embed input:focus {
+        outline: none !important;
+        border-color: #dc2626 !important;
+        box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.2) !important;
+    }
+
+    /* Job Listing Cards */
+    #SH_Embed .job-listing {
+        background: rgba(31, 41, 55, 0.7) !important;
+        border: 1px solid rgba(75, 85, 99, 0.3) !important;
+        border-radius: 1rem !important;
+        margin-bottom: 1.5rem !important;
+        padding: 2rem !important;
+        transition: all 0.3s ease-in-out !important;
+        backdrop-filter: blur(10px) !important;
+    }
+
+    #SH_Embed .job-listing:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+        border-color: rgba(220, 38, 38, 0.3) !important;
+    }
+
+    /* Job Title */
+    #SH_Embed .job-title {
+        font-size: 1.25rem !important;
+        font-weight: 600 !important;
+        color: #ffffff !important;
+        margin-bottom: 1rem !important;
+        display: inline-block !important;
+        position: relative !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+
+    #SH_Embed .job-title:hover {
+        color: #dc2626 !important;
+    }
+
+    #SH_Embed .job-title::after {
+        content: '' !important;
+        position: absolute !important;
+        bottom: -2px !important;
+        left: 0 !important;
+        width: 0 !important;
+        height: 2px !important;
+        background-color: #dc2626 !important;
+        transition: width 0.3s ease-in-out !important;
+    }
+
+    #SH_Embed .job-title:hover::after {
+        width: 100% !important;
+    }
+
+    /* Job Details */
+    #SH_Embed .job-details {
+        color: #9ca3af !important;
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Apply Button */
+    #SH_Embed .apply-button {
+        background: #dc2626 !important;
+        color: white !important;
+        padding: 0.75rem 1.5rem !important;
+        border-radius: 9999px !important;
+        font-weight: 500 !important;
+        transition: all 0.2s ease-in-out !important;
+        border: none !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+        font-size: 0.95rem !important;
+        text-decoration: none !important;
+    }
+
+    #SH_Embed .apply-button:hover {
+        background: #b91c1c !important;
+        transform: translateY(-1px) !important;
+        box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2) !important;
+    }
+
+    #SH_Embed .apply-button:active {
+        transform: translateY(0) !important;
+    }
+
+    /* Search Button */
+    #SH_Embed .search-button,
+    #SH_Embed button[type="submit"] {
+        background: #dc2626 !important;
+        color: white !important;
+        padding: 0.75rem 2rem !important;
+        border-radius: 9999px !important;
+        font-weight: 500 !important;
+        transition: all 0.2s ease-in-out !important;
+        border: none !important;
+        cursor: pointer !important;
+        width: fit-content !important;
+        margin: 1rem auto 0 !important;
+        display: block !important;
+    }
+
+    #SH_Embed .search-button:hover,
+    #SH_Embed button[type="submit"]:hover {
+        background: #b91c1c !important;
+        transform: translateY(-1px) !important;
+        box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2) !important;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        #SH_Embed .filter-container {
+            flex-direction: column !important;
+            padding: 1.5rem !important;
+        }
+
+        #SH_Embed .job-listing {
+            padding: 1.5rem !important;
+        }
+    }
+`;
+
+    const styleSheet = document.createElement("style");
+    styleSheet.innerText = customStyles;
+    document.head.appendChild(styleSheet);
+</script>
+
+
+
+    </main>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="bg-black text-white text-sm">
+    <div class="footer-top bg-black-900 border-t border-gray-700 border-b border-gray-800 py-10">
+        <div class="container mx-auto px-4">
+            <!-- Grid Layout for Responsiveness -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Column 1: Footer Info -->
+                <div>
+                    <div class="footer-info">
+                        <h3 class="text-xl font-bold mb-4">FoLiXx Hospitality</h3>
+                        <p class="text-sm">
+                            FoliXx Lounge, 142 Lekki Epe Expressway, <br>
+                            Lekki, Lagos.<br><br>
+                            <strong>Phone:</strong> +2349011111909 | +2349091111909 <br>
+                            <strong>Email:</strong> info@folixxhospitality.com<br>
+                        </p>
+                        <div class="social-links mt-3 flex space-x-3">
+                            <a href="#" class="text-white hover:text-red-500 text-xl"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="text-white hover:text-red-500 text-xl"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="text-white hover:text-red-500 text-xl"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="text-white hover:text-red-500 text-xl"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="text-white hover:text-red-500 text-xl"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Useful Links -->
+                <div>
+                    <div class="footer-links">
+                        <h4 class="text-lg font-semibold mb-4">Useful Links</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="index.html" class="hover:text-red-500">Home</a></li>
+                            <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="OurStory.html" class="hover:text-red-500">About us</a></li>
+                            <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="contact.html" class="hover:text-red-500">Contact us</a></li>
+                            <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="careers.html" class="hover:text-red-500">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 3: Business Units -->
+                <div>
+                    <div class="footer-links">
+                        <h4 class="text-lg font-semibold mb-4">Our Business Units</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="#" class="hover:text-red-500">Secrets Palace</a></li>
+                            <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="#" class="hover:text-red-500">The Glass House</a></li>
+                            <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="#" class="hover:text-red-500">FoLiXx Bukka</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div>
+                    <div class="footer-newsletter">
+                        <h4 class="text-lg font-semibold mb-4">Our Newsletter</h4>
+                        <p class="mb-4">Subscribe to our Newsletter</p>
+                        <form action="" method="post" class="flex flex-col sm:flex-row">
+                            <input type="email" name="email" class="placeholder w-full sm:w-auto flex-grow bg-gray-800 rounded-l px-4 py-2 focus:outline-none" placeholder="Enter your email">
+                            <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded-r hover:bg-red-700">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="container mx-auto px-4 py-6">
+        <div class="text-center">
+            <div class="copyright">
+                &copy; 2018-2024 Copyright <strong><span>FoLiXx Hospitality</span></strong>. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer ends -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+<script src="assets/js/main.js"></script> 
+<!-- End Footer -->
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoLiXx Hospitality - Contact</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black bg-opacity-90 z-50 pt-2">
+        <div class="container mx-auto px-8 py-4 relative flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <span class="text-white"><a href="index.html">FOLIXX</span></a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <div class="nav-item relative">
+                    <a href="OurStory.html" class="nav-link">
+                        About Us 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="dropdown">
+                        <a href="OurStory.html">Our Story</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="#">Customer Reviews</a>
+                    </div>
+                </div>
+                <div class="nav-item relative">
+                    <a href="#" class="nav-link">
+                        Subsidiaries
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="dropdown">
+                        <a href="#">Secrets Palace</a>
+                        <a href="#">FoLiXx Bukka</a>
+                        <a href="#">The Glass House</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-colors">
+                    Reach Out
+                </button>
+                <button class="md:hidden text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+               
+     <!-- Mobile Menu -->
+     <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-95 text-white absolute top-16 left-0 w-full py-4">
+        <div class="flex flex-col space-y-4 px-6">
+                <div class="mobile-dropdown">
+                    <button class="flex justify-between w-full text-left py-2 hover:bg-gray-800 px-4" onclick="toggleDropdown('mobile-about')">
+                        About Us
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform" id="arrow-mobile-about" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="mobile-about" class="hidden pl-6 space-y-2">
+                        <a href="OurStory.html" class="block py-2 hover:bg-gray-800">Our Story</a>
+                        <a href="gallery.html" class="block py-2 hover:bg-gray-800">Gallery</a>
+                        <a href="#" class="block py-2 hover:bg-gray-800">Customer Reviews</a>
+                    </div>
+                </div>
+
+            <div class="mobile-dropdown">
+                <button class="flex justify-between w-full text-left py-2 hover:bg-gray-800 px-4" onclick="toggleDropdown('mobile-subsidiaries')">
+                    Subsidiaries
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform" id="arrow-mobile-subsidiaries" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="mobile-subsidiaries" class="hidden pl-6 space-y-2">
+                    <a href="#" class="block py-2 hover:bg-gray-800">Secrets Palace</a>
+                    <a href="#" class="block py-2 hover:bg-gray-800">FoLiXx Bukka</a>
+                    <a href="#" class="block py-2 hover:bg-gray-800">The Glass House</a>
+                </div>
+            </div>
+
+            <a href="contact.html" class="block py-2 hover:bg-gray-800 px-4">Contact Us</a>
+            <a href="careers.html" class="block py-2 hover:bg-gray-800 px-4">Careers</a>
+        </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 lg:px-8">
+        <!-- Added pt-24 to account for fixed navbar height -->
+        <div class="pt-24">
+            <!-- Back Navigation -->
+            <div class="flex items-center mb-8 text-white">
+                <a href="/" class="flex items-center space-x-2 hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    <span class="text-lg">Back to Home</span>
+                </a>
+            </div>
+
+        <!-- Contact Section -->
+        <div class="text-center mb-12">
+            <div class="inline-block bg-white text-black px-4 py-1 rounded-full mb-4">Contact Us</div>
+            <h1 class="text-4xl font-bold mb-8">Contact us</h1>
+            
+            <div class="flex flex-wrap justify-center gap-8 mb-12">
+                <a href="mailto:email" class="flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <span>email</span>
+                </a>
+                <a href="tel:+1(555)000-0000" class="flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <span>+1 (555) 000-0000</span>
+                </a>
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    <span>142 Lekki - Epe Expressway, Lekki, Lagos state.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map and Form Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+            <!-- Map -->
+            <div class="w-full h-[450px] rounded-lg overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15858.745464397209!2d3.4786623!3d6.4343167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf5385fbcf311%3A0x139c37844bdc1cf3!2sFoLiXx%20Bukka!5e0!3m2!1sen!2sng!4v1738947330973!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="space-y-6">
+                <div>
+                    <label class="block mb-2">Full name</label>
+                    <input type="text" placeholder="Enter fullname" class="w-full p-3 rounded-lg bg-black border border-gray-700 focus:border-white focus:outline-none">
+                </div>
+                <div>
+                    <label class="block mb-2">Email</label>
+                    <input type="email" placeholder="Enter email" class="w-full p-3 rounded-lg bg-black border border-gray-700 focus:border-white focus:outline-none">
+                </div>
+                <div>
+                    <label class="block mb-2">Message</label>
+                    <textarea placeholder="Type your message..." rows="4" class="w-full p-3 rounded-lg bg-black border border-gray-700 focus:border-white focus:outline-none"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition-colors">
+                    Send Message
+                </button>
+            </form>
+        </div>
+        </div>
+    </main>
+
+         <!-- ======= Footer ======= -->
+       <footer id="footer" class="bg-black text-white text-sm">
+         <div class="footer-top bg-black-900 border-t border-gray-700 border-b border-gray-800 py-10">
+             <div class="container mx-auto px-4">
+                 <!-- Grid Layout for Responsiveness -->
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                     
+                     <!-- Column 1: Footer Info -->
+                     <div>
+                         <div class="footer-info">
+                             <h3 class="text-xl font-bold mb-4">FoLiXx Hospitality</h3>
+                             <p class="text-sm">
+                                 FoliXx Lounge, 142 Lekki Epe Expressway, <br>
+                                 Lekki, Lagos.<br><br>
+                                 <strong>Phone:</strong> +2349011111909 | +2349091111909 <br>
+                                 <strong>Email:</strong> info@folixxhospitality.com<br>
+                             </p>
+                             <div class="social-links mt-3 flex space-x-3">
+                                 <a href="#" class="text-white hover:text-red-500 text-xl"><i class="bx bxl-twitter"></i></a>
+                                 <a href="#" class="text-white hover:text-red-500 text-xl"><i class="bx bxl-facebook"></i></a>
+                                 <a href="#" class="text-white hover:text-red-500 text-xl"><i class="bx bxl-instagram"></i></a>
+                                 <a href="#" class="text-white hover:text-red-500 text-xl"><i class="bx bxl-skype"></i></a>
+                                 <a href="#" class="text-white hover:text-red-500 text-xl"><i class="bx bxl-linkedin"></i></a>
+                             </div>
+                         </div>
+                     </div>
+     
+                     <!-- Column 2: Useful Links -->
+                     <div>
+                         <div class="footer-links">
+                             <h4 class="text-lg font-semibold mb-4">Useful Links</h4>
+                             <ul class="space-y-2">
+                                 <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="index.html" class="hover:text-red-500">Home</a></li>
+                                 <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="OurStory.html" class="hover:text-red-500">About us</a></li>
+                                 <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="contact.html" class="hover:text-red-500">Contact us</a></li>
+                                 <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="careers.html" class="hover:text-red-500">Careers</a></li>
+                             </ul>
+                         </div>
+                     </div>
+     
+                     <!-- Column 3: Business Units -->
+                     <div>
+                         <div class="footer-links">
+                             <h4 class="text-lg font-semibold mb-4">Our Business Units</h4>
+                             <ul class="space-y-2">
+                                 <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="#" class="hover:text-red-500">Secrets Palace</a></li>
+                                 <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="#" class="hover:text-red-500">The Glass House</a></li>
+                                 <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="#" class="hover:text-red-500">FoLiXx Bukka</a></li>
+                             </ul>
+                         </div>
+                     </div>
+     
+                     <!-- Column 4: Newsletter -->
+                     <div>
+                         <div class="footer-newsletter">
+                             <h4 class="text-lg font-semibold mb-4">Our Newsletter</h4>
+                             <p class="mb-4">Subscribe to our Newsletter</p>
+                             <form action="" method="post" class="flex flex-col sm:flex-row">
+                                 <input type="email" name="email" class="placeholder w-full sm:w-auto flex-grow bg-gray-800 rounded-l px-4 py-2 focus:outline-none" placeholder="Enter your email"> 
+                                 <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded-r hover:bg-red-700">Subscribe</button>
+                             </form>
+                         </div>
+                     </div>
+     
+                 </div>
+             </div>
+         </div>
+     
+         <!-- Copyright Section -->
+         <div class="container mx-auto px-4 py-6">
+             <div class="text-center">
+                 <div class="copyright">
+                     &copy; 2018-2024 Copyright <strong><span>FoLiXx Hospitality</span></strong>. All Rights Reserved.
+                 </div>
+             </div>
+         </div>
+     </footer>
+     <!-- footer ends -->
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+     <script src="assets/js/main.js"></script> 
+
+    
+
+</body>
+</html>

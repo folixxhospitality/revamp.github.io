@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>Folixx Hospitality</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      -webkit-font-smoothing: antialiased;
+    }
+
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+      color: inherit;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    details {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    [data-thq="accordion"] [data-thq="accordion-content"] {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+      padding: 0;
+    }
+
+    [data-thq="accordion"] details[data-thq="accordion-trigger"][open]+[data-thq="accordion-content"] {
+      max-height: 1000vh;
+    }
+
+    details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {
+      transform: rotate(180deg);
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+ 
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+</head>
+
+<body>
+  <link rel="stylesheet" href="./style.css" />
+  <div>
+    <link href="./index.css" rel="stylesheet" />
+
+    <div class="frame185916-container">
+      <div class="frame185916-frame185916">
+        <div class="frame185916-home">
+          <div class="frame185916-nav">
+            <div class="frame185916-frame36">
+              <img src="public/external/union1215-x4zp.svg" alt="Union1215" class="frame185916-union" />
+              <span class="frame185916-text10">FOLIXX</span>
+            </div>
+          
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+              ☰
+            </button>
+          
+            <div class="frame185916-frame391" id="navMenu">
+              <div class="frame185916-frame37">
+                <span class="frame185916-text11">About Us</span>
+                <img src="public/external/chevrondown1216-9wwh.svg" alt="chevrondown1216"
+                  class="frame185916-chevrondown1" onclick="toggleDropdown()" />
+                <ul class="dropdown-menu" id="dropdown">
+                  <li>Our Story</li>
+                  <li>Team</li>
+                  <li>Careers</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+          
+              <div class="frame185916-frame411">
+                <span class="frame185916-text12">Subsidiaries</span>
+                <img src="public/external/chevrondown1216-z5z.svg" alt="chevrondown1216"
+                  class="frame185916-chevrondown2" />
+              </div>
+              <div class="frame185916-frame40">
+                <span class="frame185916-text13">Contact Us</span>
+              </div>
+              <div class="frame185916-frame392">
+                <span class="frame185916-text14">Careers</span>
+              </div>
+            </div>
+          
+            <div class="frame185916-frame412">
+              <span class="frame185916-text15 navtextbold">Reach Out</span>
+            </div>
+          </div>
+          
+
+          <div class="frame185916-hero">
+            <div class="frame185916-frame185887">
+              <div class="frame185916-frame451">
+                <span class="frame185916-text16">
+                  Welcome to FoliXx Hospitality
+                </span>
+              </div>
+              <div class="frame185916-frame185886">
+                <div class="frame185916-frame42">
+                  <span class="frame185916-text17">
+                    Where Comfort Meets Serenity
+                  </span>
+                  <span class="frame185916-text18">
+                    Immerse yourself in tranquility, where our dedicated team
+                    is here to provide exceptional service tailored just for
+                    you.
+                  </span>
+                </div>
+                <div class="frame185916-frame471">
+                  <div class="frame185916-frame431">
+                    <span class="frame185916-text19">Our Services</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame185916-placeholder-lightbox1">
+              <img src="public/external/image11218-b2z-700w.png" alt="image11218" class="frame185916-image1" />
+              <div class="frame185916-slider-dots">
+                <img src="public/external/dot1218-g8ua-200h.png" alt="Dot1218" class="frame185916-dot1" />
+                <img src="public/external/dot1219-t7og-200h.png" alt="Dot1219" class="frame185916-dot2" />
+                <img src="public/external/dot1219-c6zk-200h.png" alt="Dot1219" class="frame185916-dot3" />
+                <img src="public/external/dot1219-5txr-200h.png" alt="Dot1219" class="frame185916-dot4" />
+                <img src="public/external/dot1219-0c3a-200h.png" alt="Dot1219" class="frame185916-dot5" />
+              </div>
+              <img src="public/external/playbutton1219-scrt.svg" alt="PlayButton1219"
+                class="frame185916-play-button1" />
+            </div>
+          </div>
+          <div class="frame185916-services1">
+            <div class="frame185916-section-title1">
+              <div class="frame185916-frame452">
+                <span class="frame185916-text20">Why FoliXx</span>
+              </div>
+              <span class="frame185916-text21">
+                Tailored for Unforgettable Experiences
+              </span>
+            </div>
+            <div class="frame185916-frame1858931">
+              <div class="frame185916-content1">
+                <div class="frame185916-frame1858471">
+                  <img src="public/external/executivemanagersanalyzingmarketingstatisticstable1220-um5-300h.png"
+                    alt="executivemanagersanalyzingmarketingstatisticstable1220"
+                    class="frame185916-executivemanagersanalyzingmarketingstatisticstable1" />
+                  <div class="frame185916-section-title2">
+                    <div class="frame185916-frame185897">
+                      <span class="frame185916-text22">
+                        Diverse Experiences
+                      </span>
+                      <span class="frame185916-text23">
+                        FoLiXx Hospitality delivers a complete lifestyle
+                        experience, offering everything from lively nights at
+                        Secrets Palace to relaxed evenings at FoLiXx
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame185916-content2">
+                <div class="frame185916-frame1858472">
+                  <div class="frame185916-section-title3">
+                    <img src="public/external/executivemanagersanalyzingmarketingstatisticstable1221-d3rb-300h.png"
+                      alt="executivemanagersanalyzingmarketingstatisticstable1221"
+                      class="frame185916-executivemanagersanalyzingmarketingstatisticstable2" />
+                    <div class="frame185916-frame185895">
+                      <span class="frame185916-text24">
+                        High-Quality Service
+                      </span>
+                      <span class="frame185916-text25">
+                        We focus on providing a premium experience from the
+                        moment you step in. Our attentive team ensures that
+                        every guest feels welcome and valued.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame185916-content3">
+                <div class="frame185916-frame1858473">
+                  <div class="frame185916-frame185770">
+                    <div class="frame185916-section-title4">
+                      <img src="public/external/executivemanagersanalyzingmarketingstatisticstable1222-alcd-300h.png"
+                        alt="executivemanagersanalyzingmarketingstatisticstable1222"
+                        class="frame185916-executivemanagersanalyzingmarketingstatisticstable3" />
+                      <div class="frame185916-frame185896">
+                        <span class="frame185916-text26">
+                          Unmatched Ambiance with Luxury
+                        </span>
+                        <span class="frame185916-text27">
+                          We combine elegance, warmth, and comfort with
+                          affordability. Our thoughtfully designed spaces
+                          create
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame185916-frame185898">
+            <img src="public/external/rectangle51341222-wa2-200h.png" alt="Rectangle51341222"
+              class="frame185916-rectangle5134" />
+            <img src="public/external/rectangle51371222-3grk-200h.png" alt="Rectangle51371222"
+              class="frame185916-rectangle5137" />
+            <img src="public/external/rectangle51351222-19jn-200h.png" alt="Rectangle51351222"
+              class="frame185916-rectangle5135" />
+            <img src="public/external/rectangle51361222-a0zm-200h.png" alt="Rectangle51361222"
+              class="frame185916-rectangle5136" />
+            <div class="frame185916-services2">
+              <div class="frame185916-section-title5">
+                <div class="frame185916-frame453">
+                  <span class="frame185916-text28">Subsidiaries</span>
+                </div>
+                <span class="frame185916-text29">
+                  Experience FoLiXx Hospitality
+                </span>
+                <div class="frame185916-categories">
+                  <button class="frame185916-button1">
+                    <span class="frame185916-text30">Secret Palace</span>
+                  </button>
+                  <button class="frame185916-button2">
+                    <span class="frame185916-text31">The Glass House</span>
+                  </button>
+                  <button class="frame185916-button3">
+                    <span class="frame185916-text32">Folixx Bukka</span>
+                  </button>
+                </div>
+              </div>
+              <div class="frame185916-content4">
+                <div class="frame185916-frame185894">
+                  <div class="frame185916-content5">
+                    <div class="frame185916-content6">
+                      <div class="frame185916-section-title6">
+                        <div class="frame185916-content7">
+                          <span class="frame185916-text33">
+                            Experience Royalty at Secrets Palace
+                          </span>
+                          <span class="frame185916-text34">
+                            <span>
+                              Welcome to Secrets Palace, where every guest is
+                              treated like royalty.
+                            </span>
+                            <br />
+                            <span>
+                              Our discreet and luxurious gentlemen's club in
+                              Lagos offers unmatched entertainment by our
+                              daughters of Zion, Experience the ultimate
+                              nightlife experience, blending luxury, privacy,
+                              and excitement. With local and international
+                              music, world-class DJs, and a chic ambiance,
+                              every night at Secrets Palace is unforgettable.
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="frame185916-frame1858932">
+                      <div class="frame185916-frame472">
+                        <div class="frame185916-frame432">
+                          <span class="frame185916-text38">
+                            Visit Secret Palace
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame185916-placeholder-lightbox2">
+                    <img src="public/external/playbutton1225-mfjw.svg" alt="PlayButton1225"
+                      class="frame185916-play-button2" />
+                    <img src="public/external/playbutton1225-kof.svg" alt="PlayButton1225"
+                      class="frame185916-play-button3" />
+                    <img src="public/external/image21225-ew8n-500h.png" alt="image21225" class="frame185916-image2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer2-wrapper" rootclassname="footer2undefined">
+            <!--Footer2 component-->
+            <footer class="footer2-footer2 thq-section-padding footer2root-class-name">
+              <div class="footer2-max-width thq-section-max-width">
+                <div class="footer2-content4">
+                  <div class="footer2-links">
+                    <div class="footer2-column">
+                      <img alt="FoliXx Hospitality Logo"
+                        src="https://presentation-website-assets.teleporthq.io/logos/logo.png" class="footer2-image1" />
+                    </div>
+                    <div class="footer2-container1">
+                      <div class="footer2-column1">
+                        <strong class="thq-body-large">
+                          <fragment class="frame185916-fragment22">
+                            <span class="frame185916-text51">Company</span>
+                          </fragment>
+                        </strong>
+                        <div class="footer2-footer-links1">
+                          <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                            class="thq-body-small">
+                            <fragment class="frame185916-fragment13">
+                              <span class="frame185916-text42">/contact</span>
+                            </fragment>
+                          </a>
+                          <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                            class="thq-body-small">
+                            <fragment class="frame185916-fragment15">
+                              <span class="frame185916-text44">/about</span>
+                            </fragment>
+                          </a>
+                          <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                            class="thq-body-small">
+                            <fragment class="frame185916-fragment26">
+                              <span class="frame185916-text55">/venues</span>
+                            </fragment>
+                          </a>
+                          <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                            class="thq-body-small">
+                            <fragment class="frame185916-fragment16">
+                              <span class="frame185916-text45">
+                                /services
+                              </span>
+                            </fragment>
+                          </a>
+                          <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                            class="thq-body-small">
+                            <fragment class="frame185916-fragment25">
+                              <span class="frame185916-text54">/gallery</span>
+                            </fragment>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="footer2-column2">
+                        <strong class="thq-body-large">
+                          <fragment class="frame185916-fragment10">
+                            <span class="frame185916-text39">
+                              Quick Links
+                            </span>
+                          </fragment>
+                        </strong>
+                        <div class="footer2-footer-links2">
+                          <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                            class="thq-body-small">
+                            <fragment class="frame185916-fragment19">
+                              <span class="frame185916-text48">/blog</span>
+                            </fragment>
+                          </a>
+                          <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                            class="thq-body-small">
+                            <fragment class="frame185916-fragment20">
+                              <span class="frame185916-text49">/careers</span>
+                            </fragment>
+                          </a>
+                          <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                            class="thq-body-small">
+                            <fragment class="frame185916-fragment24">
+                              <span class="frame185916-text53">/faq</span>
+                            </fragment>
+                          </a>
+                          <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                            class="thq-body-small">
+                            <fragment class="frame185916-fragment27">
+                              <span class="frame185916-text56">/reviews</span>
+                            </fragment>
+                          </a>
+                          <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                            class="thq-body-small">
+                            <fragment class="frame185916-fragment14">
+                              <span class="frame185916-text43">
+                                /book-now
+                              </span>
+                            </fragment>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer2-newslatter">
+                    <div class="footer2-content5">
+                      <strong class="footer2-column3-title thq-body-large">
+                        Subscribe
+                      </strong>
+                      <span class="thq-body-small">
+                        <fragment class="frame185916-fragment17">
+                          <span class="frame185916-text46">
+                            © 2023 FoliXx Hospitality. All rights reserved.
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+                    <div class="footer2-actions">
+                      <div class="footer2-form">
+                        <div class="footer2-container2">
+                          <input type="email" placeholder="Enter your email" class="footer2-text-input thq-input" />
+                        </div>
+                        <button class="thq-button-outline footer2-button">
+                          <span class="thq-body-small">
+                            <fragment class="frame185916-fragment12">
+                              <span class="frame185916-text41">
+                                Contact Us
+                              </span>
+                            </fragment>
+                          </span>
+                        </button>
+                      </div>
+                      <span class="thq-body-small">
+                        <fragment class="frame185916-fragment21">
+                          <span class="frame185916-text50">
+                            Designed with ❤️ by FoliXx Design Team
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer2-credits1">
+                  <div class="thq-divider-horizontal"></div>
+                  <div class="footer2-row">
+                    <div class="footer2-credits2">
+                      <span class="thq-body-small">© 2024 TeleportHQ</span>
+                      <div class="footer2-footer-links3">
+                        <span class="thq-body-small">
+                          <fragment class="frame185916-fragment23">
+                            <span class="frame185916-text52">/privacy</span>
+                          </fragment>
+                        </span>
+                        <span class="thq-body-small">
+                          <fragment class="frame185916-fragment11">
+                            <span class="frame185916-text40">/terms</span>
+                          </fragment>
+                        </span>
+                        <span class="thq-body-small">
+                          <fragment class="frame185916-fragment18">
+                            <span class="frame185916-text47">/cookies</span>
+                          </fragment>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="footer2-social-links">
+                      <svg viewBox="0 0 877.7142857142857 1024" class="thq-icon-small">
+                        <path
+                          d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z">
+                        </path>
+                      </svg><svg viewBox="0 0 877.7142857142857 1024" class="thq-icon-small">
+                        <path
+                          d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z">
+                        </path>
+                      </svg><svg viewBox="0 0 950.8571428571428 1024" class="thq-icon-small">
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z">
+                        </path>
+                      </svg><svg viewBox="0 0 877.7142857142857 1024" class="thq-icon-small">
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z">
+                        </path>
+                      </svg><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </footer2-wrapper>
+        </div>
+        <div class="frame185916-titlebar"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>
