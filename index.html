@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoLiXx Hospitality</title>
+    <link rel="icon" href="assets/img/FOLIXX LOGO.webp" type="image/svg+xml">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
@@ -15,11 +16,13 @@
 
 <body class="bg-black text-white">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-black bg-opacity-90 z-50 pt-2">
-        <div class="container mx-auto px-8 py-4 relative flex justify-between items-center">
-            <div class="text-2xl font-bold">
-                <span class="text-white"><a href="index.html">FOLIXX</span></a>
-            </div>
+    <nav class="fixed w-full bg-black bg-opacity-90 z-50">
+        <div class="container mx-auto px-6 py-1 relative flex justify-between items-center">
+            <div class="text-xl font-bold flex items-center">
+                <img src="assets/img/FOLIXX LOGO.webp" alt="FOLIXX Logo" class="h-12 w-12 mr-2 object-contain">
+                <a href="index.html" class="text-white">FOLIXX</a>
+            </div>            
+            
             <div class="hidden md:flex items-center space-x-8">
                 <div class="nav-item relative">
                     <a href="OurStory.html" class="nav-link">
@@ -87,7 +90,7 @@
                 <div id="mobile-subsidiaries" class="hidden pl-6 space-y-2">
                     <a href="#" class="block py-2 hover:bg-gray-800">Secrets Palace</a>
                     <a href="#" class="block py-2 hover:bg-gray-800">FoLiXx Bukka</a>
-                    <a href="#" class="block py-2 hover:bg-gray-800">The Glass House</a>
+                    <a href="https://theglasshouse.ng/" class="block py-2 hover:bg-gray-800">The Glass House</a>
                 </div>
             </div>
 
@@ -100,7 +103,7 @@
     
     <!-- Hero Section -->
    
-<!-- Hero Section -->
+    <!-- Hero Section -->
         <section class="hero-section min-h-screen flex items-center pt-20">
             <div class="container mx-auto px-6">
                 <div class="hero-content flex flex-col-reverse md:flex-row items-center justify-between">
@@ -114,7 +117,7 @@
                         </p>
                         <div class="md:hidden w-full">
                             <div class="image-slider rounded-3xl overflow-hidden">
-                                <img src="assets/img/image11218-b2z-700w.png" alt="Mobile View Slide" class="w-full">
+                                <img src="assets/img/Bar.webp" alt="Mobile View Slide" class="w-full">
                             </div>
                         </div>
                         <button class="cta-button px-8 py-4 rounded-full bg-red-600 text-white text-lg hover:bg-red-700 transition-all">
@@ -125,11 +128,11 @@
                     <div class="hidden md:block w-1/2 pl-8">
                         <div class="image-slider rounded-3xl overflow-hidden relative">
                             <div class="slides transition-all duration-500">
-                                <img src="assets/img/image11218-b2z-700w.png" alt="Slide 1" class="w-full">
-                                <img src="assets/img/image11218-b2z-700w.png" alt="Slide 2" class="w-full hidden">
-                                <img src="assets/img/image11218-b2z-700w.png" alt="Slide 3" class="w-full hidden">
-                                <img src="assets/img/image11218-b2z-700w.png" alt="Slide 4" class="w-full hidden">
-                                <img src="assets/img/image11218-b2z-700w.png" alt="Slide 5" class="w-full hidden">
+                                <img src="assets/img/Bar.webp" alt="Slide 1 bar" class="w-full">
+                                <img src="assets/img/bukka_2.webp" alt="Slide 2 bukka" class="w-full hidden">
+                                <img src="assets/img/secrets_5.webp" alt="Slide 3 secrets" class="w-full hidden">
+                                <img src="assets/img/TGH_EXT2.webp" alt="Slide 4 TGH_EXT2" class="w-full hidden">
+                                <img src="assets/img/crystal_corner2.webp" alt="Slide 5 crystal_corner2" class="w-full hidden">
                             </div>
                             <div class="slide-dots flex justify-center space-x-2 absolute bottom-4 left-1/2 transform -translate-x-1/2">
                                 <button class="dot w-3 h-3 rounded-full bg-red-600" onclick="currentSlide(1)"></button>
@@ -159,14 +162,14 @@
                 <div class="relative">
                     <div class="transform md:translate-y-0 space-y-4">
                         <div>
-                            <img src="assets/img/executivemanagersanalyzingmarketingstatisticstable1220-um5-300h.png"
+                            <img src="assets/img/xpcollage.webp"
                                  alt="Diverse Experiences"
                                  class="w-full rounded-2xl">
                         </div>
                         <div class="pt-4">
                             <h3 class="text-2xl font-bold">Diverse Experiences</h3>
                             <p class="text-gray-300">
-                                FoLiXx Hospitality delivers a complete lifestyle experience, offering everything from lively nights at Secrets Palace to relaxed evenings at FoLiXx.
+                                FoLiXx Hospitality delivers a complete lifestyle experience, offering everything from lively nights at Secrets Palace, relaxed evenings at The Glass House or a hearty meal at FoLiXx Bukka.
                             </p>
                         </div>
                     </div>
@@ -176,7 +179,7 @@
                 <div class="relative">
                     <div class="transform md:translate-y-16 space-y-4">
                         <div>
-                            <img src="assets/img/executivemanagersanalyzingmarketingstatisticstable1221-d3rb-300h.png"
+                            <img src="assets/img/hourglasstgh.webp"
                                  alt="High-Quality Service"
                                  class="w-full rounded-2xl">
                         </div>
@@ -193,7 +196,7 @@
                 <div class="relative">
                     <div class="transform md:translate-y-32 space-y-4">
                         <div>
-                            <img src="assets/img/executivemanagersanalyzingmarketingstatisticstable1222-alcd-300h.png"
+                            <img src="assets/img/bukka_2.webp"
                                  alt="Unmatched Ambiance"
                                  class="w-full rounded-2xl">
                         </div>
@@ -230,19 +233,19 @@
                 </div>
                 <div class="frame-container">
                     <!-- Top Left Border -->
-                    <img src="assets/img/rectangle51341222-wa2-200h.png" class="border-image top-left">
+                    <img src="assets/img/rectangle51341222-wa2-200h.webp" class="border-image top-left">
                 
                     <!-- Top Right Border -->
-                    <img src="assets/img/rectangle51371222-3grk-200h.png" class="border-image top-right">
+                    <img src="assets/img/rectangle51371222-3grk-200h.webp" class="border-image top-right">
                 
                     <!-- Bottom Left Border -->
-                    <img src="assets/img/rectangle51351222-19jn-200h.png" class="border-image bottom-left">
+                    <img src="assets/img/rectangle51351222-19jn-200h.webp" class="border-image bottom-left">
                 
                     <!-- Bottom Right Border -->
-                    <img src="assets/img/rectangle51361222-a0zm-200h.png" class="border-image bottom-right">
+                    <img src="assets/img/rectangle51361222-a0zm-200h.webp" class="border-image bottom-right">
                 
                     <!-- Main Image -->
-                    <img src="assets/img/secrets_8.jpg" alt="Secret Palace" class="main-image">
+                    <img src="assets/img/secrets_8.webp" alt="Secret Palace" class="main-image">
                 </div>                
               </div>
             </div>
@@ -252,23 +255,23 @@
                 <div>
                   <h3 class="text-3xl font-bold mb-6">Elegant Evenings at The Glass House</h3>
                   <p class="text-gray-300 mb-8">Step into the refined ambiance of The Glass House, where sophistication and relaxation collide. Unwind in our chic, minimalist setting while savoring the finest drinks and culinary delights.</p>
-                  <button class="cta-button px-8 py-3 rounded-full">Visit The Glass House</button>
+                  <a href="https://theglasshouse.ng/"><button class="cta-button px-8 py-3 rounded-full">Visit The Glass House</button></a>
                 </div>
                 <div class="frame-container">
                     <!-- Top Left Border -->
-                    <img src="assets/img/rectangle51341222-wa2-200h.png" class="border-image top-left">
+                    <img src="assets/img/rectangle51341222-wa2-200h.webp" class="border-image top-left">
                 
                     <!-- Top Right Border -->
-                    <img src="assets/img/rectangle51371222-3grk-200h.png" class="border-image top-right">
+                    <img src="assets/img/rectangle51371222-3grk-200h.webp" class="border-image top-right">
                 
                     <!-- Bottom Left Border -->
-                    <img src="assets/img/rectangle51351222-19jn-200h.png" class="border-image bottom-left">
+                    <img src="assets/img/rectangle51351222-19jn-200h.webp" class="border-image bottom-left">
                 
                     <!-- Bottom Right Border -->
-                    <img src="assets/img/rectangle51361222-a0zm-200h.png" class="border-image bottom-right">
+                    <img src="assets/img/rectangle51361222-a0zm-200h.webp" class="border-image bottom-right">
                 
                     <!-- Main Image -->
-                    <img src="assets/img/crystal_corner.jpg" alt="Secret Palace" class="main-image">
+                    <img src="assets/img/crystal_corner.webp" alt="Secret Palace" class="main-image">
                 </div>                
               </div>
             </div>
@@ -281,19 +284,19 @@
                 </div>
                 <div class="frame-container">
                     <!-- Top Left Border -->
-                    <img src="assets/img/rectangle51341222-wa2-200h.png" class="border-image top-left">
+                    <img src="assets/img/rectangle51341222-wa2-200h.webp" class="border-image top-left">
                 
                     <!-- Top Right Border -->
-                    <img src="assets/img/rectangle51371222-3grk-200h.png" class="border-image top-right">
+                    <img src="assets/img/rectangle51371222-3grk-200h.webp" class="border-image top-right">
                 
                     <!-- Bottom Left Border -->
-                    <img src="assets/img/rectangle51351222-19jn-200h.png" class="border-image bottom-left">
+                    <img src="assets/img/rectangle51351222-19jn-200h.webp" class="border-image bottom-left">
                 
                     <!-- Bottom Right Border -->
-                    <img src="assets/img/rectangle51361222-a0zm-200h.png" class="border-image bottom-right">
+                    <img src="assets/img/rectangle51361222-a0zm-200h.webp" class="border-image bottom-right">
                 
                     <!-- Main Image -->
-                    <img src="assets/img/bukka_2.jpg" alt="Secret Palace" class="main-image">
+                    <img src="assets/img/bukka_2.webp" alt="Secret Palace" class="main-image">
                 </div>                
               </div>
             </div>
@@ -349,7 +352,7 @@
                             <h4 class="text-lg font-semibold mb-4">Our Business Units</h4>
                             <ul class="space-y-2">
                                 <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="#" class="hover:text-red-500">Secrets Palace</a></li>
-                                <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="#" class="hover:text-red-500">The Glass House</a></li>
+                                <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="https://theglasshouse.ng/" class="hover:text-red-500">The Glass House</a></li>
                                 <li class="flex items-center"><i class="bx bx-chevron-right mr-2"></i><a href="#" class="hover:text-red-500">FoLiXx Bukka</a></li>
                             </ul>
                         </div>
